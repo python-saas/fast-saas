@@ -138,7 +138,7 @@ make clean
 
 ```
 fastapi-saas/
-├── app/                 # Python backend (FastAPI)
+├── backend/             # Python backend (FastAPI)
 ├── frontend/           # React frontend
 ├── scripts/           # Development scripts
 ├── .env.example       # Environment template

@@ -187,8 +187,8 @@ lint: lint-backend lint-frontend ## Run linting on all code
 
 lint-backend: ## Run backend linting (mypy + ruff)
 	@echo "🔍 Running backend linting..."
-	@uv run mypy app
-	@uv run ruff check app
+	@uv run mypy backend
+	@uv run ruff check backend
 
 lint-frontend: ## Run frontend linting
 	@echo "🔍 Running frontend linting..."
@@ -198,8 +198,8 @@ format: format-backend ## Format all code
 
 format-backend: ## Format backend code
 	@echo "✨ Formatting backend code..."
-	@uv run ruff format app
-	@uv run ruff check --fix app
+	@uv run ruff format backend
+	@uv run ruff check --fix backend
 
 # =============================================================================
 # Build Commands
